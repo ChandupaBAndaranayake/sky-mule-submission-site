@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKY-MULE Research Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <div class="brand-icon">📡</div>
+        <div>
+          <h1>SKY-MULE Research Project</h1>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#domain">Domain</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#hardware">Hardware</a>
+        <a href="#milestones">Milestones</a>
+        <a href="#documents">Documents</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge dark">Autonomous UAV-based data ferrying for disconnected WSNs</span>
+          <h2>Autonomous Data Ferrying from a Self-Organizing / Healing WSN in Disconnected Zones</h2>
+          <p class="hero-text">
+            This project presents a self-organizing,
+            self-healing wireless sensor network that uses UAV-assisted data ferrying to collect sensor data
+            from disconnected environments.
+          </p>
+          <div class="button-row">
+            <a class="button primary" href="#documents">View Documents</a>
+            <a class="button secondary" href="#presentations">View Slides</a>
+          </div>
+          <div class="stats">
+            <div class="stat-card"><strong>4</strong><span>Integrated research components</span></div>
+            <div class="stat-card"><strong>9</strong><span>Included PDF files</span></div>
+            <div class="stat-card"><strong>&lt; 20 MB</strong><span>Submission-friendly package</span></div>
+          </div>
+        </div>
+        <div class="panel-grid">
+          <article class="mini-card"><span>🌍</span><h3>Disconnected zones</h3><p>Built for forests, disaster areas, rural sites, and other places with no permanent communication infrastructure.</p></article>
+          <article class="mini-card"><span>🛰️</span><h3>Self-organizing WSN</h3><p>Nodes organize into clusters and choose a Cluster Head using a algorithm called STELLAR that considers trust, energy, uptime, and link quality.</p></article>
+          <article class="mini-card"><span>🔋</span><h3>Energy-aware design</h3><p>Adaptive power modes, local storage, and efficient communication aim to extend node lifetime.</p></article>
+          <article class="mini-card"><span>🚁</span><h3>UAV data ferrying</h3><p>A UAV wakes the network, collects buffered data, and transports it back to the base station.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="domain" class="section">
+      <div class="container">
+        <p class="section-label">Domain</p>
+        <h2 class="section-title">Research domain and objectives</h2>
+        <p class="section-copy">The project combines embedded systems, wireless sensor networks, UAV systems, trust-aware clustering, and delay-tolerant data delivery.</p>
+
+        <div class="two-col">
+          <div class="card">
+            <h3>Key challenges</h3>
+            <ul class="list">
+              <li>No permanent communication infrastructure in deployment zones</li>
+              <li>High energy consumption in traditional WSN designs</li>
+              <li>Data loss risk during Cluster Head failure or unstable UAV contact</li>
+              <li>Need for secure and fair autonomous coordination</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Main objectives</h3>
+            <ul class="list check">
+              <li>Build a self-organizing and self-healing WSN for disconnected environments</li>
+              <li>Enable reliable UAV-based store-carry-forward data collection</li>
+              <li>Improve node lifetime with adaptive energy management</li>
+              <li>Support trust-aware Cluster Head election and fault tolerance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture" class="section alt">
+      <div class="container">
+        <p class="section-label">Architecture</p>
+        <h2 class="section-title">How the system works</h2>
+        <figure class="architecture-figure">
+          <img
+            src="Assests/system_architecturepng.png"
+            alt="SKY-MULE system architecture diagram"
+            class="architecture-image"
+          />
+        </figure>
+        <div class="flow-grid">
+          <div class="flow-card"><span>1</span><h3>Main Set Nodes</h3><p>Sensor nodes capture readings and manage local storage and energy.</p></div>
+          <div class="flow-card"><span>2</span><h3>STELLAR Election</h3><p>Nodes elect a stable and secure Cluster Head using multiple metrics.</p></div>
+          <div class="flow-card"><span>3</span><h3>Cluster Storage</h3><p>The Cluster Head aggregates data and keeps it ready for UAV handover.</p></div>
+          <div class="flow-card"><span>4</span><h3>UAV Ferry</h3><p>The UAV triggers wake-up, collects buffered data, and carries it onward.</p></div>
+          <div class="flow-card"><span>5</span><h3>Base Station</h3><p>A dashboard displays health, alerts, routes, and environmental readings.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hardware" class="section">
+      <div class="container">
+        <p class="section-label">Hardware</p>
+        <h2 class="section-title">First-version hardware implementations</h2>
+        <div class="hardware-grid">
+          <article class="hardware-card">
+            <img src="Assests/Node.png" alt="First-version sensor node hardware implementation" class="hardware-image" />
+            <h3>Node Hardware</h3>
+            <p>First-version implementation of the ground sensor node hardware.</p>
+          </article>
+          <article class="hardware-card">
+            <img src="Assests/UAV.png" alt="First-version UAV hardware implementation" class="hardware-image" />
+            <h3>UAV Hardware</h3>
+            <p>First-version implementation of the UAV platform used for data ferrying.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="milestones" class="section">
+      <div class="container">
+        <p class="section-label">Milestones</p>
+        <h2 class="section-title">Project journey</h2>
+        <div class="timeline">
+          <div class="timeline-item"><strong>Completed</strong><span>Ground Node Design</span></div>
+          <div class="timeline-item"><strong>Completed</strong><span>UAV Design</span></div>
+          <div class="timeline-item"><strong>Completed</strong><span>Ground Node Firmware-v1</span></div>
+          <div class="timeline-item"><strong>Completed</strong><span>UAV Firmware-v1</span></div>
+          <div class="timeline-item"><strong>Completed</strong><span> System Integration</span></div>
+          <div class="timeline-item"><strong>Completed</strong><span>Full System Testing 10/10</span></div>
+          <div class="timeline-item upcoming"><strong>Upcoming</strong><span>Ground Node Firmware-v2</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="documents" class="section alt">
+      <div class="container">
+        <p class="section-label">Documents</p>
+        <h2 class="section-title">Project documents</h2>
+        <p class="section-copy">This section lists the produced documents and placeholders for pending deliverables.</p>
+        <div class="card-grid">
+          <article class="doc-card">
+            <span class="status available">Available</span>
+            <h3>Topic Assessment Form</h3>
+            <p>Approved topic and project scope definition.</p>
+            <a href="files/topic-assessment-form.pdf" target="_blank">Open PDF</a>
+          </article>
+          <article class="doc-card">
+            <span class="status available">Available</span>
+            <h3>Design Document</h3>
+            <p>System scope, architecture, interfaces, risks, and requirements.</p>
+            <a href="files/design-document.pdf" target="_blank">Open PDF</a>
+          </article>
+          <article class="doc-card">
+            <span class="status available">Available</span>
+            <h3>Proposal Report – UAV Routing</h3>
+            <p>Individual proposal focused on UAV-assisted data ferrying and routing.</p>
+            <a href="files/proposal-report-uav-routing.pdf" target="_blank">Open PDF</a>
+          </article>
+          <article class="doc-card">
+            <span class="status available">Available</span>
+            <h3>Proposal Report – Cluster Head Selection</h3>
+            <p>Individual proposal focused on autonomous cluster formation and CH election.</p>
+            <a href="files/proposal-report-cluster-head-selection.pdf" target="_blank">Open PDF</a>
+          </article>
+          <article class="doc-card">
+            <span class="status available">Available</span>
+            <h3>Proposal Report – Multi-Sensor Node</h3>
+            <p>Individual proposal focused on node hardware and power-aware sensing.</p>
+            <a href="files/proposal-report-multi-sensor-node.pdf" target="_blank">Open PDF</a>
+          </article>
+          <article class="doc-card">
+            <span class="status available">Available</span>
+            <h3>Proposal Report – Cluster Data Communication</h3>
+            <p>Individual proposal focused on member-to-CH communication and handover.</p>
+            <a href="files/proposal-report-cluster-data-communication.pdf" target="_blank">Open PDF</a>
+          </article>
+          <article class="doc-card">
+            <span class="status available">Available</span>
+            <h3>Research Paper</h3>
+            <p>Integrated paper describing the SKY-MULE system and experimental evaluation.</p>
+            <a href="files/research-paper-sky-mule.pdf" target="_blank">Open PDF</a>
+          </article>
+          <article class="doc-card">
+            <span class="status pending">Pending</span>
+            <h3>Project Charter</h3>
+            <p>Add your project charter link or file here before final submission.</p>
+            <span class="coming-soon">Add link later</span>
+          </article>
+          <article class="doc-card">
+            <span class="status pending">Pending</span>
+            <h3>Final Documents</h3>
+            <p>Main final report and 4 member documents can be added here later.</p>
+            <span class="coming-soon">Add links later</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="presentations" class="section">
+      <div class="container">
+        <p class="section-label">Presentations</p>
+        <h2 class="section-title">Slides and demo videos</h2>
+        <div class="card-grid">
+          <article class="doc-card">
+            <span class="status available">Available</span>
+            <h3>YouTube Channel</h3>
+            <p>Main project channel with test runs, demos, and other uploaded SKY-MULE videos.</p>
+            <a href="https://www.youtube.com/@ChandupaChiranjeee" target="_blank" rel="noopener noreferrer">Open Channel</a>
+          </article>
+          <article class="doc-card">
+            <span class="status available">Available</span>
+            <h3>Progress Presentation 1</h3>
+            <p>First progress presentation in PDF format.</p>
+            <a href="files/progress-presentation-1.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
+          </article>
+          <article class="doc-card">
+            <span class="status available">Available</span>
+            <h3>Progress Presentation 2</h3>
+            <p>Second progress presentation in PDF format.</p>
+            <a href="files/progress-presentation-2.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
+          </article>
+          <article class="doc-card">
+            <span class="status available">Available</span>
+            <h3>STELLAR Playlist</h3>
+            <p>Playlist covering the STELLAR-related tests, demonstrations, and implementation flow.</p>
+            <a href="https://www.youtube.com/watch?v=mJHCrEG25aE&amp;list=PLPMmSLAf-LOJxTu8OyinSStmPlAAhzqsH" target="_blank" rel="noopener noreferrer">Open Playlist</a>
+          </article>
+          <article class="doc-card">
+            <span class="status available">Available</span>
+            <h3>UAV Playlist</h3>
+            <p>Playlist covering UAV-related tests, demo runs, and system behavior videos.</p>
+            <a href="https://www.youtube.com/watch?v=7tbf14t-6AQ&amp;list=PLPMmSLAf-LOJ9BNED5xD8x801Q-Uneruz" target="_blank" rel="noopener noreferrer">Open Playlist</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <p class="section-label">About us</p>
+        <h2 class="section-title">Project team</h2>
+        <div class="card-grid">
+          <article class="team-card"><h3>Bandaranayake K. B. H. M. C. C.</h3><p>IT22069122</p><span>UAV Data Ferrying & Routing</span></article>
+          <article class="team-card"><h3>Bandara K. B. O. V.</h3><p>IT22564986</p><span>Autonomous Cluster Formation & CH Selection</span></article>
+          <article class="team-card"><h3>Wickrama Arachchi D. R.</h3><p>IT22360496</p><span>Multi-Sensor Node & Power Design</span></article>
+          <article class="team-card"><h3>Thamasha W. Y. M. G.</h3><p>IT22088000</p><span>Cluster Data Communication</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section footer-section">
+      <div class="container footer-box">
+        <div>
+          <p class="section-label light">Contact</p>
+          <h2 class="section-title light">Get in touch</h2>
+        </div>
+        <div class="notes">
+          <div><strong>Email:</strong> <a href="mailto:chandupachiranjewa@gmail.com">chandupachiranjewa@gmail.com</a></div>
+          <div><strong>Tel:</strong> <a href="tel:+94770788785">+94 770 788 785</a></div>
+          <div><strong>YouTube:</strong> <a href="https://www.youtube.com/@ChandupaChiranjeee" target="_blank" rel="noopener noreferrer">youtube.com/@ChandupaChiranjeee</a></div>
+          <div><strong>GitHub:</strong> <a href="https://github.com/WSNDataFerry" target="_blank" rel="noopener noreferrer">github.com/WSNDataFerry</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
