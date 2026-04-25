@@ -33,10 +33,10 @@
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="badge dark">Autonomous UAV-based data ferrying for disconnected WSNs</span>
           <h2>Autonomous Data Ferrying from a Self-Organizing / Healing WSN in Disconnected Zones</h2>
           <p class="hero-text">
-            SKY-MULE is a UAV-assisted data retrieval system for remote environmental monitoring. It uses STELLAR, a newly developed control-plane algorithm that makes the sensor network self-organizing, self-healing, and energy-aware. STELLAR selects the best Cluster Head using trust, link quality, and remaining energy. The Cluster Head stores sensor data locally until a UAV arrives. When the UAV sends an RF wake-up signal, the Cluster Head connects to the UAV’s Wi-Fi access point and transfers the data. This creates a low-power and fully autonomous data collection system for isolated areas.          </p>
+            SKY-MULE is a UAV-assisted autonomous data collection system for remote areas without fixed communication infrastructure. It uses low-power, solar-supported sensor nodes that self-organize into clusters and select the best Cluster Head based on energy, uptime, trust, and link quality. A UAV autonomously visits the area, wakes Cluster Heads, and collects stored environmental data wirelessly.
+            Prototype testing confirmed successful Cluster Head election, scheduled communication, and end-to-end data delivery, achieving about 65% reliability in the initial firmware. Overall, SKY-MULE offers a scalable, low-cost, and energy-aware solution for long-term monitoring in disconnected environments.
           <div class="button-row">
             <a class="button primary" href="#documents">View Documents</a>
             <a class="button secondary" href="#presentations">View Slides</a>
@@ -44,12 +44,12 @@
           <div class="stats">
             <div class="stat-card"><strong>4</strong><span>Integrated research components</span></div>
             <div class="stat-card"><strong>12+</strong><span>Key hardware and software technologies</span></div>
-            <div class="stat-card"><strong>1</strong><span>United end-to-end prototype</span></div>
+            <div class="stat-card"><strong>1</strong><span>Unified end-to-end prototype</span></div>
           </div>
         </div>
         <div class="panel-grid">
           <article class="mini-card"><span>🌍</span><h3>Disconnected zones</h3><p>Built for forests, disaster areas, rural sites, and other places with no permanent communication infrastructure.</p></article>
-          <article class="mini-card"><span>🛰️</span><h3>Self-organizing WSN</h3><p>Nodes organize into clusters and choose a Cluster Head using a algorithm called STELLAR that considers trust, energy, uptime, and link quality.</p></article>
+          <article class="mini-card"><span>🛰️</span><h3>Self-organizing WSN</h3><p>Nodes organize into clusters and choose a Cluster Head using an algorithm called STELLAR that considers trust, energy, uptime, and link quality.</p></article>
           <article class="mini-card"><span>🔋</span><h3>Energy-aware design</h3><p>Adaptive power modes, local storage, and efficient communication aim to extend node lifetime.</p></article>
           <article class="mini-card"><span>🚁</span><h3>UAV data ferrying</h3><p>A UAV wakes the network, collects buffered data, and transports it back to the base station.</p></article>
         </div>
@@ -190,16 +190,10 @@
             <a href="files/research-paper-sky-mule.pdf" target="_blank">Open PDF</a>
           </article>
           <article class="doc-card">
-            <span class="status pending">Pending</span>
-            <h3>Project Charter</h3>
-            <p>Add your project charter link or file here before final submission.</p>
-            <span class="coming-soon">Add link later</span>
-          </article>
-          <article class="doc-card">
-            <span class="status pending">Pending</span>
+            <span class="status available">Available</span>
             <h3>Final Documents</h3>
             <p>Main final report and 4 member documents can be added here later.</p>
-            <span class="coming-soon">Add links later</span>
+              <a href="https://drive.google.com/drive/folders/1yw04FyrYGBpYuk5SOMOtsm8Y1rryvuAA?usp=sharing" target="_blank">Open PDF</a>
           </article>
         </div>
       </div>
@@ -214,7 +208,7 @@
             <span class="status available">Available</span>
             <h3>YouTube Channel</h3>
             <p>Main project channel with test runs, demos, and other uploaded SKY-MULE videos.</p>
-            <a href="https://www.youtube.com/@ChandupaChiranjeee" target="_blank" rel="noopener noreferrer">Open Channel</a>
+            <a href="https://www.youtube.com/@ChandupaChiranjeeea" target="_blank" rel="noopener noreferrer">Open Channel</a>
           </article>
           <article class="doc-card">
             <span class="status available">Available</span>
@@ -249,10 +243,13 @@
         <p class="section-label">About us</p>
         <h2 class="section-title">Project team</h2>
         <div class="card-grid">
-          <article class="team-card"><h3>Bandaranayake K. B. H. M. C. C.</h3><p>IT22069122</p><span>UAV Data Ferrying & Routing</span></article>
-          <article class="team-card"><h3>Bandara K. B. O. V.</h3><p>IT22564986</p><span>Autonomous Cluster Formation & CH Selection</span></article>
-          <article class="team-card"><h3>Wickrama Arachchi D. R.</h3><p>IT22360496</p><span>Multi-Sensor Node & Power Design</span></article>
-          <article class="team-card"><h3>Thamasha W. Y. M. G.</h3><p>IT22088000</p><span>Cluster Data Communication</span></article>
+          <article class="team-card"><h3>Bandaranayake K. B. H. M. C. C.</h3><p>IT22069122</p><span>Focused on intelligent UAV-assisted data ferrying, routing, node onboarding, and mission-level data transport.
+</span><br><br><strong>Email:</strong> <a href="IT22069122@my.sliit.lk">IT22069122@my.sliit.lk</a></article>
+          <article class="team-card"><h3>Bandara K. B. O. V.</h3><p>IT22564986</p><span>Developed STELLAR-based cluster formation, trust-aware election, fairness, and secure Cluster Head coordination.
+</span><br><br><strong>Email:</strong> <a href="IT22564986@my.sliit.lk">IT22564986@my.sliit.lk</a></article>
+          <article class="team-card"><h3>Wickrama Arachchi D. R.</h3><p>IT22360496</p><span>Built the ESP32-S3 sensor node, adaptive power management engine, and on-node compression evaluation.
+</span><br><br><strong>Email:</strong> <a href="IT22360496@my.sliit.lk">IT22360496@my.sliit.lk</a></article>
+          <article class="team-card"><h3>Thamasha W. Y. M. G.</h3><p>IT22088000</p><span>Implemented energy-efficient MS↔CH communication, time-sliced scheduling, and fault-tolerant buffering and handover.</span><br><br><strong>Email:</strong> <a href="IT22088000@my.sliit.lk">IT22088000@my.sliit.lk</a></article>
         </div>
       </div>
     </section>
@@ -265,8 +262,8 @@
         </div>
         <div class="notes">
           <div><strong>Email:</strong> <a href="mailto:chandupachiranjewa@gmail.com">chandupachiranjewa@gmail.com</a></div>
-          <div><strong>Tel:</strong> <a href="tel:+94770788785">+94 770 788 785</a></div>
-          <div><strong>YouTube:</strong> <a href="https://www.youtube.com/@ChandupaChiranjeee" target="_blank" rel="noopener noreferrer">youtube.com/@ChandupaChiranjeee</a></div>
+          <div><strong>Tel:</strong> <a href="tel:+94770788785">+94 770 788 785</a> | <a href="tel:+94740654079">+94 740 654 079</a> | <a href="tel:+94762499310">+94 762 499 310</a></div>
+          <div><strong>YouTube:</strong> <a href="https://www.youtube.com/@ChandupaChiranjeeea" target="_blank" rel="noopener noreferrer">youtube.com/@ChandupaChiranjeeea</a></div>
           <div><strong>GitHub:</strong> <a href="https://github.com/WSNDataFerry" target="_blank" rel="noopener noreferrer">github.com/WSNDataFerry</a></div>
         </div>
       </div>
