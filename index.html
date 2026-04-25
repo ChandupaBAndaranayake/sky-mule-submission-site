@@ -82,6 +82,68 @@
             </ul>
           </div>
         </div>
+
+        <div class="domain-details">
+          <div class="detail-block">
+            <h3>Literature Survey</h3>
+            <p>WSNs support monitoring in remote areas but struggle without fixed infrastructure because gateways and multi-hop routing drain batteries. Data MULEs and UAVs improve connectivity by collecting buffered data, while LEACH/HEED clustering saves energy but lacks trust and security. Existing trust-aware methods are too heavy for low-cost nodes. BLE 5.0, ESP-NOW, deep sleep, solar power, and compression can improve range, communication, reliability, and lifetime.</p>
+          </div>
+
+          <div class="detail-block">
+            <h3>Research Problem</h3>
+            <p>Design a fully autonomous, energy-efficient, and secure WSN that can self-organize, aggregate data, and transfer it through UAVs without fixed infrastructure or human intervention.</p>
+          </div>
+
+          <div class="detail-block">
+            <h3>Main Objective</h3>
+            <p>Design and implement SKY-MULE, a self-organizing UAV-assisted WSN data ferrying system with long node lifetime and reliable end-to-end data delivery.</p>
+          </div>
+
+          <div class="detail-block">
+            <h3>Key Objectives</h3>
+            <ul class="list">
+              <li>Build solar-powered ESP32-S3 sensor nodes with power management and compression.</li>
+              <li>Develop secure CH election using battery, uptime, trust, and link quality.</li>
+              <li>Implement TDMA-based ESP-NOW communication and persistent storage.</li>
+              <li>Deploy UAV-based RF wake-up, Wi-Fi data collection, and dashboard visualization.</li>
+            </ul>
+          </div>
+
+          <div class="detail-block">
+            <h3>Methodology</h3>
+            <p>The system has three layers:</p>
+            <ul class="list">
+              <li><strong>WSN Layer:</strong> Sensor nodes collect data, elect secure CHs, and send data using ESP-NOW.</li>
+              <li><strong>UAV Layer:</strong> UAV follows waypoints, wakes CHs using 433 MHz RF, and collects stored data via Wi-Fi/HTTPS.</li>
+              <li><strong>Base Station Layer:</strong> Data is stored in PostgreSQL and visualized using a React dashboard.</li>
+            </ul>
+            <p>Testing includes unit tests, integration tests, SITL simulation, and real field trials.</p>
+          </div>
+
+          <div class="detail-block">
+            <h3>Technologies</h3>
+            <div class="tech-grid">
+              <span class="tech-tag">ESP32-S3</span>
+              <span class="tech-tag">ESP-IDF</span>
+              <span class="tech-tag">FreeRTOS</span>
+              <span class="tech-tag">BLE 5.0</span>
+              <span class="tech-tag">ESP-NOW</span>
+              <span class="tech-tag">HMAC-SHA256</span>
+              <span class="tech-tag">SPIFFS</span>
+              <span class="tech-tag">433 MHz RF</span>
+              <span class="tech-tag">Wi-Fi HTTPS</span>
+              <span class="tech-tag">miniz</span>
+              <span class="tech-tag">ArduPilot</span>
+              <span class="tech-tag">ROS 2</span>
+              <span class="tech-tag">MAVROS</span>
+              <span class="tech-tag">Gazebo</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Leaflet.js</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
