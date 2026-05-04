@@ -427,6 +427,71 @@ a:hover { text-decoration: underline; }
   transition: none;
 }
 
+/* Contact Form Styles */
+.contact-form-container {
+  grid-column: 1 / -1;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05); /* Glassmorphism feel */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.contact-form-container h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.5rem;
+  color: #fff;
+  font-family: inherit;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.form-submit {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  margin-top: 0.5rem;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.form-submit:hover {
+  background: #0d9488;
+}
+
 @media (max-width: 980px) {
   .hero-grid,
   .two-col,
