@@ -351,6 +351,21 @@ a:hover { text-decoration: underline; }
   margin: 0.25rem 0 0.4rem;
 }
 
+.team-card {
+  text-align: center;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  display: block;
+  border: 3px solid var(--accent-soft);
+  background: var(--panel);
+}
+
 .footer-section {
   background: transparent;
 }
@@ -402,6 +417,29 @@ a:hover { text-decoration: underline; }
   margin: 0.5rem 0;
   color: var(--muted);
   line-height: 1.7;
+}
+
+.references-list {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.references-list h4 {
+  margin: 0 0 0.5rem;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.references-list ol {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.references-list li {
+  margin-bottom: 0.5rem;
 }
 
 .tech-grid {
